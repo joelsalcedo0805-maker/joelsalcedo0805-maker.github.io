@@ -1,11 +1,11 @@
 {
-  "name": "JPOS \u2014 Bakery POS",
+  "name": "JPOS Point of Sale",
   "short_name": "JPOS",
   "start_url": "./",
   "scope": "./",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#c62828",
+  "theme_color": "#ff0000",
   "icons": [
     {
       "src": "icons/icon-192.png",

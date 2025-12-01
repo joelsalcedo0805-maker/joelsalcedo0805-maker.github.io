@@ -27,7 +27,6 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
-  // For navigation requests, prefer cache, fallback to network, then offline page
   if (event.request.mode === 'navigate') {
     event.respondWith(
       caches.match('./index.html').then((resp) => resp || fetch(event.request).catch(() => caches.match('./index.html')))
