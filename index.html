@@ -1,19 +1,17 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="manifest" href="manifest.json">
-<meta name="theme-color" content="#b30000">
-<script>
- if ('serviceWorker' in navigator) {
-   navigator.serviceWorker.register('./service-worker.js');
- }
-</script>
-<title>JPOS</title>
+  <meta charset="UTF-8">
+  <title>JPOS</title>
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#c62828">
 </head>
 <body>
-<h1>JPOS App Installed</h1>
+  <h1>JPOS PWA Ready</h1>
+  <script>
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register("service-worker.js");
+    }
+  </script>
 </body>
 </html>
